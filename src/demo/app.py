@@ -8,7 +8,7 @@ parser.add_argument("--message", type=str, default="Hello MLOps!", help="Message
 args = parser.parse_args()
 
 # Get an environment variable, with a default fallback
-student_name = os.getenv("STUDENT_NAME", "Future MLOps Engineer")
+student_name = os.getenv("GURUPRIYA AVADHANI M M", "Future MLOps Engineer")
 
 print("========================================")
 print(f"Message: {args.message}")
