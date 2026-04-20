@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "model_type": "KNNRecommendation",
+    "hyperparameters": {
+      "k": 3,
+      "use_similarity_weights": false,
+      "default_rating": 3.0
+    },
+    "training": {
+      "n_train_samples": 1516,
+      "n_val_samples": 379,
+      "split_ratio": 0.8
+    },
+    "evaluation": {
+      "rmse": 1.028730136306437,
+      "mae": 0.7983729111697451
+    },
+    "features_path": "models/rating_features.pkl",
+    "ratings_path": "data/processed/ratings_clean.csv"
+  },
+  "test_set": {
+    "n_samples": 1895
+  },
+  "rating_prediction": {
+    "rmse": 1.062758754944314,
+    "mae": 0.8317502198768689,
+    "median_error": 0.6666666666666665,
+    "mean_error": 0.8317502198768689,
+    "std_error": 0.6615495015080646,
+    "percentiles": {
+      "p25": 0.5,
+      "p50": 0.6666666666666665,
+      "p75": 1.0,
+      "p90": 1.5,
+      "p95": 2.0
+    },
+    "n_samples": 1895
+  },
+  "coverage": {
+    "coverage_ratio": 1.0,
+    "n_recommended": 100,
+    "n_total": 100,
+    "threshold": 0.5
+  },
+  "sparsity": {
+    "n_users": 189,
+    "n_movies": 100,
+    "n_ratings": 1895,
+    "density": 0.10026455026455026,
+    "sparsity": 0.8997354497354497
+  },
+  "error_distribution": {
+    "mean_error": 0.8317502198768689,
+    "std_error": 0.6615495015080646,
+    "distribution": {
+      "0-0.5": {
+        "count": 402,
+        "percent": 21.21372031662269
+      },
+      "0.5-1.0": {
+        "count": 609,
+        "percent": 32.13720316622691
+      },
+      "1.0-1.5": {
+        "count": 464,
+        "percent": 24.485488126649077
+      },
+      "1.5-2.0": {
+        "count": 244,
+        "percent": 12.87598944591029
+      },
+      "2.0-10": {
+        "count": 176,
+        "percent": 9.287598944591029
+      }
+    }
+  },
+  "baselines": {
+    "mean_rmse": 0.9536532613707047,
+    "median_rmse": 0.9542987036725632,
+    "constant_rmse": 1.06093999243415,
+    "best_baseline": 0.9536532613707047
+  },
+  "by_engagement": {
+    "low": {
+      "n_samples": 51,
+      "mae": 0.9558823529411766,
+      "mean_engagement": 4.333333333333333
+    },
+    "medium": {
+      "n_samples": 1844,
+      "mae": 0.8283170643528561,
+      "mean_engagement": 11.196312364425163
+    }
+  }
+}
