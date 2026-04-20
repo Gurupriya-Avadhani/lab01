@@ -33,9 +33,6 @@
 
 
 stages:
-  # -------------------------
-  # Lab 1: Data Ingestion / Load
-  # -------------------------
   load:
     cmd: python src/ingest.py
     deps:
@@ -43,18 +40,15 @@ stages:
       - src/ingest.py
       - src/config.py
     outs:
-      - data/processed/ratings_clean.csv
+      - data/processed/ratings_raw_clean.csv
     metrics:
       - evaluations/validation_report.json:
           cache: false
 
-  # -------------------------
-  # Lab 2: Processing / Feature Creation
-  # -------------------------
   process:
     cmd: python src/process_ratings.py
     deps:
-      - data/processed/ratings_clean.csv   # output from load stage
+      - data/processed/ratings_raw_clean.csv
       - src/process_ratings.py
     outs:
       - data/processed/ratings_clean.csv
