@@ -1,0 +1,19 @@
+{
+  "model_type": "KNNRecommendation",
+  "hyperparameters": {
+    "k": 3,
+    "use_similarity_weights": false,
+    "default_rating": 3.0
+  },
+  "training": {
+    "n_train_samples": 1516,
+    "n_val_samples": 379,
+    "split_ratio": 0.8
+  },
+  "evaluation": {
+    "rmse": 1.028730136306437,
+    "mae": 0.7983729111697451
+  },
+  "features_path": "models/rating_features.pkl",
+  "ratings_path": "data/processed/ratings_clean.csv"
+}
