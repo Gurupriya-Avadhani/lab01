@@ -1,0 +1,42 @@
+{
+  "3": {
+    "rmse": 0.5069689521543435,
+    "mae": 0.4050591271760003,
+    "coverage": 1.0,
+    "training_time": 0.01904892921447754,
+    "run_id": "32f7f08c259c49eaa3ebc88d83520fbe",
+    "model_path": "models/knn_k3.pkl"
+  },
+  "5": {
+    "rmse": 0.48302744548599574,
+    "mae": 0.379277664629832,
+    "coverage": 1.0,
+    "training_time": 0.0216519832611084,
+    "run_id": "d9381c04cbd34eddacaee7d588a55d8b",
+    "model_path": "models/knn_k5.pkl"
+  },
+  "10": {
+    "rmse": 0.484240916074191,
+    "mae": 0.37441799879686877,
+    "coverage": 1.0,
+    "training_time": 0.011006832122802734,
+    "run_id": "c08e130f567245b98bd110a8963d6940",
+    "model_path": "models/knn_k10.pkl"
+  },
+  "15": {
+    "rmse": 0.45588759351773167,
+    "mae": 0.3579207366707367,
+    "coverage": 1.0,
+    "training_time": 0.009053707122802734,
+    "run_id": "5d666b62806644e98540d58b31f981c7",
+    "model_path": "models/knn_k15.pkl"
+  },
+  "20": {
+    "rmse": 0.45601865808360403,
+    "mae": 0.3568246661319417,
+    "coverage": 1.0,
+    "training_time": 0.019051313400268555,
+    "run_id": "eebdb0073a3d441b807430f2044fc367",
+    "model_path": "models/knn_k20.pkl"
+  }
+}
